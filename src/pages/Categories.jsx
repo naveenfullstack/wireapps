@@ -28,10 +28,11 @@ export default function Categories() {
   return (
     <div>
       <Header />
-      <HomeProducts
-        products={data}
-        title={categoryId.replace("-", " ")}
-      />
+      <div className="flex justify-center">
+        <div className="w-full max-w-defult space-y-6">
+          <HomeProducts products={data} title={categoryId.replace("-", " ")} />
+        </div>
+      </div>
     </div>
   );
 }
